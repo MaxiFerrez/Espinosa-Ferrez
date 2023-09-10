@@ -1,0 +1,37 @@
+
+.tarjeta {
+    background-color: #2c2c2c;
+    background-image: url('../../img/fondotarjeta.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 200px;
+    position: relative;
+}
+
+.tarjeta:hover {
+    transform: scale(1.06);
+}
+
+.tarjeta-h2 {
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgb(139, 29, 29);
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+.tarjeta img {
+    position: relative;
+    top: 30px;
+    border-radius: 50%;
+    max-width: 100%;
+    
+}
