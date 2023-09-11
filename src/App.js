@@ -9,8 +9,6 @@ import DetallePersonajes from './components/DetallePersonajes/DetallePersonajes'
 function RoutesApp() {
   return (
     <>
-      <div >NAVBAR</div>
-
       <Routes>
 
         <Route path="/" element={<Login />} />
