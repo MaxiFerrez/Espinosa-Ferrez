@@ -1,0 +1,78 @@
+/* Estilos generales para el contenedor del formulario */
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   background-image: url('https://i.gifer.com/1ROW.gif');
+   
+  }
+  
+  /* Estilos para el formulario */
+  .formulario {
+    background-color: #c9c1c1;
+    padding: 31px;
+    border-radius: 10px;
+    box-shadow: 0 5px 29px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 41%;
+
+    background: url('/src/img/fondo.jpg') lightgray 10%/ cover no-repeat;
+    
+
+}
+  
+  /* Estilos para el título del formulario */
+  .formulario h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para los campos de entrada y etiquetas */
+  .input-form {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  .input-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .input-form input {
+    width: 56%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para el botón de inicio de sesión */
+  .login-button {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #ff704d;
+    transform: translateY(-3px);
+  }
+  
+  /* Estilos para el enlace "Olvidé mi contraseña" */
+  .forgot-password a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .forgot-password a:hover {
+    color: #ff5733;
+  }
+  

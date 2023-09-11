@@ -7,8 +7,6 @@ import Login from './components/login/Login';
 function RoutesApp() {
   return (
     <>
-      <div >NAVBAR</div>
-
       <Routes>
 
         <Route path="/" element={<Login />} />

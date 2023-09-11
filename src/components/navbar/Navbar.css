@@ -1,0 +1,44 @@
+/* Estilos para el Navbar */
+.navbar {
+    width: 60%;
+    height: 8vh;
+    margin: 0 auto;
+    background-color: #a5a3a3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+  
+  /* Estilos para la lista de elementos de navegación */
+  .navbar-list {
+    list-style: none; /* Elimina los puntos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Mostrar elementos en línea horizontalmente */
+  }
+  
+  /* Estilos para los elementos de navegación */
+  .navbar-item {
+    margin-right: 20px; /* Espacio entre elementos */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones para los efectos */
+    font-size: 1rem;
+  }
+
+  .navbar-item:hover{
+    background-color: #d8491a; /* Cambia el color de fondo al pasar el mouse */
+    transform: translateY(-5px); /* Efecto 3D: desplaza hacia arriba */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
+  }
+  
+  /* Estilos para los enlaces de navegación */
+  .navbar-link {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado enlaces */
+    transition: color 0.3s; /* Transición para el cambio de color al pasar el mouse */
+  }
+  
+ 
+  
+  
