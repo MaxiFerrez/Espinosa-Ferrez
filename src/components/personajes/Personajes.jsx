@@ -20,12 +20,13 @@ export default function Personajes() {
         fetchData();
       }, []);
       
-      //console.log(personajes);
+      console.log(personajes);
+      
   return (
     <>
     <h1>Personajes</h1>
     <div className='contenedor-tarjetas'>
-        {personajes.slice(0, 10).map((Personajes)=>(<Tarjetas key={Personajes.id} Data={Personajes}/>))}
+        {personajes.map((Personajes)=>(<Tarjetas key={Personajes._id} Data={Personajes}/>))}
     </div>
     </>
   )
