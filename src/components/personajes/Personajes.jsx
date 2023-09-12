@@ -29,7 +29,7 @@ export default function Personajes() {
     <Navbar></Navbar>
   <h1>Personajes</h1>
     <div className='contenedor-tarjetas'>
-        {personajes.map((Personajes)=>(<Tarjetas key={Personajes._id} Data={Personajes}/>))}
+        {personajes.map((Personajes)=>(<Tarjetas key={Personajes.id} Data={Personajes}/>))}
     </div>
     </>
   )

@@ -1,10 +1,19 @@
-import React from 'react'
 
-export default function DetallePersonajes({Dato}) {
+import React from 'react'
+import { useLocation } from 'react-router-dom';
+
+const DetallePersonajes = () => {
+  const location = useLocation();
+  const { data } = location.state;
+
   return (
-    <>
-    <div>DetallePersonajes</div>
-    <h2>{Dato.Nombre}</h2>
-    </>
-  )
-}
+    <div>
+      <h2>{data.Nombre}</h2>
+      <p>{data.Descripcion}</p>
+      <img src={data.Imagen} alt="Imagen del personaje" />
+      {/* Otras propiedades del personaje */}
+    </div>
+  );
+};
+
+export default DetallePersonajes;

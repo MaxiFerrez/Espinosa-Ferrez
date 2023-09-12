@@ -1,11 +1,7 @@
 
 .tarjeta {
     background-color: #e9ec39;
-    /* background-image: url('../../img/fondotarjeta.png'); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 16px;
     margin: 16px;
@@ -25,14 +21,22 @@
     background-color: rgb(139, 29, 29);
     color: #ffffff;
     font-size: 1.5em;
-    margin-bottom: 8px;
+    margin-bottom: 18px;
 }
 
 .tarjeta img {
     position: relative;
-    top: 30px;
-    
     max-width: 80%;
     max-height: 80%;
-    
+}
+.Modal{
+    background-color: yellow; /* Cambiar a tu color de fondo deseado */
+  margin: 0 auto; /* Centra horizontalmente */
+  margin-bottom: 10%; /* Ajusta la posición vertical según tus preferencias */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  position: relative;
 }

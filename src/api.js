@@ -2,17 +2,18 @@ import axios from "axios";
 
 const instance = axios.create({
     //baseURL: "http://localhost/aplicativo-api/public/api"
-    baseURL: "https://rickandmortyapi.com/api"
+    //baseURL: "https://apisimpsons.fly.dev/api"
+    baseURL: "http://localhost/aplicativo-api/public/api"
 });
 
 export const GetPersonajes = async()=>{
-    const url = "/personajes?limit=635&page=1"
+    const url = "/personajes"
     const response = await instance.get(url);
-    return response.data.docs;
+    return response.data;
 }
 
-export const GetLugares = async()=>{
-    const url = "/location"
+export const GetTemporadas = async()=>{
+    const url = "/temporadas"
     const response = await instance.get(url);
-    return response.data.docs;
+    return response.data;
 }

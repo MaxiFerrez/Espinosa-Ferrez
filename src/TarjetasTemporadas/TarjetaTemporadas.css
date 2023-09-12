@@ -1,0 +1,15 @@
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: black;
+    width: 100%;
+}
+
+/* Estilo de cada tarjeta */
+.tarjeta {
+    width: calc(18% ); /* Esto hace que haya 3 tarjetas por fila con un espacio de 16px entre ellas */
+    margin-bottom: 16px; /* Espacio entre las filas */
+    height: 480px;
+    box-sizing: border-box;
+}
