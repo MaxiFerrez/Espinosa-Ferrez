@@ -24,7 +24,7 @@ export default function Temporadas() {
   return (
     <>
     <Navbar></Navbar>
-  <h1>Temporadas</h1>
+  <h1 className='titl-temp'>Temporadas</h1>
     <div className='contenedor-tarjetas'>
         {temporadas.map((Temporadas)=>(<TarjetaTemporadas key={Temporadas.id} Data={Temporadas}/>))}
     </div>

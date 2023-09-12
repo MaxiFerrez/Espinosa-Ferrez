@@ -13,10 +13,10 @@ function Navbar() {
           <a href="/personajes" className="navbar-link">Personajes</a>
         </li>
         <li className="navbar-item">
-          <a href="/temporadas" className="navbar-link">Tempordas</a> 
+          <a href="/temporadas" className="navbar-link">Temporadas</a> 
         </li>
         <li className="navbar-item">
-          <a href="/" className="navbar-link">salir</a>
+          <a href="/" className="navbar-link">Salir</a>
         </li>
       </ul>
     </nav>

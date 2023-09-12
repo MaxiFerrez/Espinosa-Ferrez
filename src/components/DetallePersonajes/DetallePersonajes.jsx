@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation, useParams } from 'react-router-dom';
 import { GetTemporadaShow } from '../../api';
+import Navbar from '../navbar/Navbar'
 
 const DetallePersonajes = () => {
   let { id } = useParams();
@@ -23,6 +24,8 @@ const DetallePersonajes = () => {
       
       console.log(temporadaid);
   return (
+    <>
+    <Navbar></Navbar>
     <div>
       <h2>Detalle Temporadas</h2>
       <p>Temporada: {temporadaid.Temporada}</p>
@@ -31,6 +34,7 @@ const DetallePersonajes = () => {
       <p>Ultima Emision: {temporadaid.Ultima_emision}</p>
       <p>Audiencia Promedio: {temporadaid.Audiencia_promedio}</p>
     </div>
+    </>
   );
 };
 

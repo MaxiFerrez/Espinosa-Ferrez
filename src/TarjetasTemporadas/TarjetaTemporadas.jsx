@@ -8,7 +8,9 @@ export default function TarjetaTemporadas({Data}) {
   return (
     <>
     <div className='tarjeta'>
-        <h2 >Temporada: {Data.Temporada} Episodio: {Data.Episodios}</h2>
+        <h2 > Temporada: {Data.Temporada} </h2>
+        <h3>Cantidad de Episodios: {Data.Episodios}</h3>
+        
         
          <Link to= {`/temporadas/${Data.id}`}><button>Ver mas</button></Link>
     </div>

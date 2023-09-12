@@ -27,7 +27,7 @@ export default function Personajes() {
   return (
     <>
     <Navbar></Navbar>
-  <h1>Personajes</h1>
+  <h1 className='tit-pers'>Personajes</h1>
     <div className='contenedor-tarjetas'>
         {personajes.map((Personajes)=>(<Tarjetas key={Personajes.id} Data={Personajes}/>))}
     </div>

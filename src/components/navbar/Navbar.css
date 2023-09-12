@@ -11,20 +11,20 @@
   }
     
   .logo-nav img{
-    width: 5rem;
+    width: 7.5rem;
     animation: moveLogoRight 10s linear infinite;
     position: relative;
-    right: 50rem; 
+    right: 83rem; 
     z-index: 99;
     
   }
 
   @keyframes moveLogoRight {
     0%{
-      transform: translateX(0); /* Empieza fuera del nav en la izquierda */
+      transform: translateX(-42px); /* Empieza fuera del nav en la izquierda */
     }
     100% {
-      transform: translateX(1300px); /* Llega al otro extremo del nav en la derecha */
+      transform: translateX(1900px); /* Llega al otro extremo del nav en la derecha */
     }
   }
 
