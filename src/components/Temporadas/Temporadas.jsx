@@ -19,7 +19,7 @@ export default function Temporadas() {
         fetchData();
       }, []);
       
-      console.log(temporadas);
+      //console.log(temporadas);
       
   return (
     <>

@@ -17,3 +17,9 @@ export const GetTemporadas = async()=>{
     const response = await instance.get(url);
     return response.data;
 }
+
+export const GetTemporadaShow = async(id)=>{
+    const url = "/temporadas/" + id
+    const response = await instance.get(url);
+    return response.data;
+}

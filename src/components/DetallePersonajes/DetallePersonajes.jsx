@@ -1,17 +1,35 @@
 
-import React from 'react'
-import { useLocation } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import { useLocation, useParams } from 'react-router-dom';
+import { GetTemporadaShow } from '../../api';
 
 const DetallePersonajes = () => {
-  const location = useLocation();
-  const { data } = location.state;
-
+  let { id } = useParams();
+  console.log(id);
+  const [temporadaid, setid] = useState([])
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            
+            const data = await GetTemporadaShow(id);
+            setid(data);
+          } catch (error) {
+            console.error('Error al obtener los personajes', error);
+          }
+        };
+    
+        fetchData();
+      }, []);
+      
+      console.log(temporadaid);
   return (
     <div>
-      <h2>{data.Nombre}</h2>
-      <p>{data.Descripcion}</p>
-      <img src={data.Imagen} alt="Imagen del personaje" />
-      {/* Otras propiedades del personaje */}
+      <h2>Detalle Temporadas</h2>
+      <p>Temporada: {temporadaid.Temporada}</p>
+      <p>Episodios: {temporadaid.Episodios}</p>
+      <p>Primera Emision: {temporadaid.Posicion_Primera_emision}</p>
+      <p>Ultima Emision: {temporadaid.Ultima_emision}</p>
+      <p>Audiencia Promedio: {temporadaid.Audiencia_promedio}</p>
     </div>
   );
 };
