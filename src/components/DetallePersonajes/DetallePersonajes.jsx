@@ -1,8 +1,9 @@
 
 import React, { useEffect, useState } from 'react'
-import { useLocation, useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
 import { GetTemporadaShow } from '../../api';
 import Navbar from '../navbar/Navbar'
+import './DetallePersonajes.css';
 
 const DetallePersonajes = () => {
   let { id } = useParams();
@@ -26,13 +27,13 @@ const DetallePersonajes = () => {
   return (
     <>
     <Navbar></Navbar>
-    <div>
+    <div className='tarj-completa'> 
       <h2>Detalle Temporadas</h2>
-      <p>Temporada: {temporadaid.Temporada}</p>
-      <p>Episodios: {temporadaid.Episodios}</p>
-      <p>Primera Emision: {temporadaid.Posicion_Primera_emision}</p>
-      <p>Ultima Emision: {temporadaid.Ultima_emision}</p>
-      <p>Audiencia Promedio: {temporadaid.Audiencia_promedio}</p>
+      <h3>Temporada: {temporadaid.Temporada}</h3>
+      <h3>Episodios: {temporadaid.Episodios}</h3>
+      <h3>Primera Emision: {temporadaid.Posicion_Primera_emision}</h3>
+      <h3>Ultima Emision: {temporadaid.Ultima_emision}</h3>
+      <h3>Audiencia Promedio: {temporadaid.Audiencia_promedio}</h3>
     </div>
     </>
   );
